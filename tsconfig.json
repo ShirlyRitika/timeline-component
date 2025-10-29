@@ -1,0 +1,18 @@
+
+{
+  "compilerOptions": {
+    "moduleResolution": "bundler",
+    "module": "ESNext",
+    "target": "ESNext",
+    "jsx": "react-jsx",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+     "noEmit": true,
+      "types": ["vite/client"] 
+  },
+  "include": ["src", ".storybook", "global.d.ts"]
+}

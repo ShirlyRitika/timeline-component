@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  --row-height: 64px;
+  --left-panel-width: 200px;
+}
+
+body {
+  @apply bg-gray-100 text-gray-900 font-sans;
+}
+
+.timeline-left {
+  @apply bg-white border-r p-4;
+}
+
+.timeline-row {
+  height: var(--row-height);
+}
+
+.task-bar {
+  @apply absolute rounded-lg shadow-sm cursor-pointer transition-all;
+}
+
+.task-bar:hover {
+  @apply scale-[1.02] brightness-110;
+}
+
+.task-bar:focus {
+  outline: 2px solid rgba(14, 165, 233, 0.9);
+  outline-offset: 2px;
+}
+
+.task-bar:hover {
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
+}
+
+.timeline-header,
+.timeline-row {
+  height: 56px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.timeline-header div,
+.timeline-row div {
+  border-right: 1px solid #e2e8f0;
+}
